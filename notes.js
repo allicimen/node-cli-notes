@@ -10,6 +10,7 @@ const filePath = path.join(__dirname ,"data", "notes.json");
 function loadNotes() {
 
     // asagidaki kod  satırı dosyayı buffer  olarak  korur
+    //  buffer olarak korumak demek : Dosyanın içeriğini RAM’de binary veri olarak geçici saklamak.
     const data = fs.readFileSync(filePath);
 
     //bize  buffer  değil string lazım..
@@ -46,5 +47,5 @@ function addNote(text) {
 
 module.exports = {
 
-    addNote
+    addNote // bu  addNote u da  app.js in içinde kullanacağız ondan dışarı açtık
 };
