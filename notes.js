@@ -1,7 +1,7 @@
 
 
 // önce modul tanimlamalarini  yapalım 
-const fs = require("fs");
+const fs = require("fs");  // fs : file system 
 const path = require("path");
 
 const filePath = path.join(__dirname ,"data", "notes.json");
